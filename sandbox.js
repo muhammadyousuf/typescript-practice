@@ -33,3 +33,25 @@ ninga = {
     user: "raza",
     age: 36
 };
+var subject;
+var total;
+var result;
+subject = "math";
+total = 33;
+result = false;
+var ningaValue = [];
+//ningaValue = ["a", "b", "c"]
+ningaValue.push("d");
+var mixed = [];
+mixed.push("Hello");
+mixed.push(55);
+mixed.push(true);
+console.log("mixed", mixed);
+var uid;
+uid = "1234";
+uid = 1234;
+var ningaOne;
+ningaOne = { name: "yousuf", age: 45 };
+ningaOne = [];
+var ningaTwo;
+ningaTwo = { name: "yousuf", age: 33, color: "brown" };
