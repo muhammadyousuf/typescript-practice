@@ -118,5 +118,7 @@ newNinga = {name:"Yousuf",age:24};
 
 newNinga = {name:false,age:"Yousuf"};
 
+console.log("newNinga", newNinga)
+
 
 

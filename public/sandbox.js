@@ -1,3 +1,4 @@
+"use strict";
 var character = 'Muhammad Yousuf';
 console.log(character);
 var inputs = document.querySelectorAll('input');
@@ -31,7 +32,8 @@ var ninga = {
 //ninga.skills = ["programmer"]
 ninga = {
     user: "raza",
-    age: 36
+    age: 36,
+    // skills:["developer"]
 };
 var subject;
 var total;
@@ -68,3 +70,4 @@ console.log("newMixed", newMixed);
 var newNinga;
 newNinga = { name: "Yousuf", age: 24 };
 newNinga = { name: false, age: "Yousuf" };
+console.log("newNinga", newNinga);
