@@ -80,15 +80,43 @@ uid = "1234";
 uid = 1234;
 
 let ningaOne: object;
-ningaOne = {name: "yousuf", age:45}
+ningaOne = { name: "yousuf", age: 45 }
 ningaOne = [];
 
 
 let ningaTwo: {
-  name:string,
-  age:number,
+  name: string,
+  age: number,
   color: string
 }
 
-ningaTwo = {name:"yousuf", age: 33, color:"brown" }
+ningaTwo = { name: "yousuf", age: 33, color: "brown" }
+
+
+let newAge: any = 24;
+
+newAge = "Yousuf";
+
+console.log("newAge String", newAge)
+
+newAge = false;
+
+console.log("newAge Bool", newAge)
+
+let newMixed: any[] = [];
+
+newMixed.push("Yousuf");
+newMixed.push(44);
+newMixed.push(true);
+
+
+console.log("newMixed", newMixed)
+
+let newNinga : {name:any, age:any};
+
+newNinga = {name:"Yousuf",age:24};
+
+newNinga = {name:false,age:"Yousuf"};
+
+
 
