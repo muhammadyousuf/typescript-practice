@@ -33,3 +33,7 @@ calc = function (numOne, numTwo, action) {
         return numOne - numTwo;
 };
 //example three
+var logD;
+logD = function (ninga) {
+    console.log(ninga.name + " is " + ninga.age + " year old");
+};

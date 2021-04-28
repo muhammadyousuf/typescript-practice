@@ -45,3 +45,10 @@ calc = (numOne: number, numTwo: number, action: string) => {
 }
 
 //example three
+let logD: (obj:{name: string, age: number}) => void;
+
+type person = {name: string, age: number};
+
+logD = (ninga: person) => {
+    console.log(`${ninga.name} is ${ninga.age} year old`);
+}
