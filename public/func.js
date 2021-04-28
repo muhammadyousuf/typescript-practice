@@ -17,3 +17,19 @@ var logDetail = function (uid, item) {
 var greet = function (user) {
     console.log("Hello user");
 };
+// function signature
+// example one
+var sayHello;
+sayHello = function (name, greeting) {
+    console.log(name + " says " + greeting);
+};
+// example two
+var calc;
+calc = function (numOne, numTwo, action) {
+    if (action === "add") {
+        return numOne + numTwo;
+    }
+    else
+        return numOne - numTwo;
+};
+//example three
