@@ -1,6 +1,5 @@
-let greet: Function = () => {
-    console.log("Hello user");
-}
+type StringOrNum = string | number
+type ObjectName = {name: string, uid: StringOrNum }
 
 const add = (a: number, b: number, c?: number | string, d: number = 5):void => {
     console.log(a + b);
@@ -8,7 +7,7 @@ const add = (a: number, b: number, c?: number | string, d: number = 5):void => {
     console.log("Value of D ", d)
 }
 
-greet()
+
 add(4, 4)
 
 const minus = (a: number, b:number) => {
@@ -17,3 +16,12 @@ const minus = (a: number, b:number) => {
 
 let res = minus(4, 2)
 console.log("res", res)
+
+
+const logDetail = (uid: StringOrNum, item: string) => {
+    console.log(`${item} has a uid of ${uid}`)
+}
+
+let greet: Function = (user: ObjectName) => {
+    console.log("Hello user");
+}
