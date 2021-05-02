@@ -1,30 +1,30 @@
 "use strict";
-var character = 'Muhammad Yousuf';
+let character = 'Muhammad Yousuf';
 console.log(character);
-var inputs = document.querySelectorAll('input');
-inputs.forEach(function (input) {
+const inputs = document.querySelectorAll('input');
+inputs.forEach(input => {
     console.log(input);
 });
-var username = "yousuf";
+let username = "yousuf";
 // username = 4
-var age = 43;
-var flag = false;
+let age = 43;
+let flag = false;
 //flag = "no"
-var circle = function (daimeter) {
+const circle = (daimeter) => {
     return daimeter * Math.PI;
 };
 console.log(circle(7.5));
-var names = ["yousf", "rafae", "raza"];
+let names = ["yousf", "rafae", "raza"];
 // names.push(3)
 // names[2] = 3
-var num = [1, 2, 3, 4];
+let num = [1, 2, 3, 4];
 // num.push("yousuf")
 // num[2] = "rafae"
-var mixArray = ["yousuf", 2, 5, "raza"];
+let mixArray = ["yousuf", 2, 5, "raza"];
 mixArray.push("rafae");
 mixArray.push(3);
 // mixArray.push(false)
-var ninga = {
+let ninga = {
     user: "yousf",
     age: 24
 };
@@ -35,39 +35,39 @@ ninga = {
     age: 36,
     // skills:["developer"]
 };
-var subject;
-var total;
-var result;
+let subject;
+let total;
+let result;
 subject = "math";
 total = 33;
 result = false;
-var ningaValue = [];
+let ningaValue = [];
 //ningaValue = ["a", "b", "c"]
 ningaValue.push("d");
-var mixed = [];
+let mixed = [];
 mixed.push("Hello");
 mixed.push(55);
 mixed.push(true);
 console.log("mixed", mixed);
-var uid;
+let uid;
 uid = "1234";
 uid = 1234;
-var ningaOne;
+let ningaOne;
 ningaOne = { name: "yousuf", age: 45 };
 ningaOne = [];
-var ningaTwo;
+let ningaTwo;
 ningaTwo = { name: "yousuf", age: 33, color: "brown" };
-var newAge = 24;
+let newAge = 24;
 newAge = "Yousuf";
 console.log("newAge String", newAge);
 newAge = false;
 console.log("newAge Bool", newAge);
-var newMixed = [];
+let newMixed = [];
 newMixed.push("Yousuf");
 newMixed.push(44);
 newMixed.push(true);
 console.log("newMixed", newMixed);
-var newNinga;
+let newNinga;
 newNinga = { name: "Yousuf", age: 24 };
 newNinga = { name: false, age: "Yousuf" };
 console.log("newNinga", newNinga);

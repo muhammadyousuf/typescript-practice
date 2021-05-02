@@ -1,31 +1,30 @@
 "use strict";
-var add = function (a, b, c, d) {
-    if (d === void 0) { d = 5; }
+const add = (a, b, c, d = 5) => {
     console.log(a + b);
     console.log("Value of C ", c);
     console.log("Value of D ", d);
 };
 add(4, 4);
-var minus = function (a, b) {
+const minus = (a, b) => {
     return a - b;
 };
-var res = minus(4, 2);
+let res = minus(4, 2);
 console.log("res", res);
-var logDetail = function (uid, item) {
-    console.log(item + " has a uid of " + uid);
+const logDetail = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
 };
-var greet = function (user) {
+let greet = (user) => {
     console.log("Hello user");
 };
 // function signature
 // example one
-var sayHello;
-sayHello = function (name, greeting) {
-    console.log(name + " says " + greeting);
+let sayHello;
+sayHello = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
 };
 // example two
-var calc;
-calc = function (numOne, numTwo, action) {
+let calc;
+calc = (numOne, numTwo, action) => {
     if (action === "add") {
         return numOne + numTwo;
     }
@@ -33,7 +32,7 @@ calc = function (numOne, numTwo, action) {
         return numOne - numTwo;
 };
 //example three
-var logD;
-logD = function (ninga) {
-    console.log(ninga.name + " is " + ninga.age + " year old");
+let logD;
+logD = (ninga) => {
+    console.log(`${ninga.name} is ${ninga.age} year old`);
 };

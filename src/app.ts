@@ -3,30 +3,8 @@
 // console.log(anchor?.href)
 
 //const form = document.querySelector('form');
+import {Invoice} from './classes/invoice.js'
 
-class Invoice {
-//   readonly  client: string;
-//   private  details: string;
-//   public amount: number;
-
-    // constructor(c: string, d: string, a: number) {
-    //     this.client = c;
-    //     this.details = d;
-    //     this.amount = a;
-    // }
-
-    constructor (
-        readonly client: string,
-        private details: string,
-        public amount: number,
-
-    ){}
-
-    format() {
-        return `${this.client} owes £${this.amount} for ${this.details}`
-    }
-
-}
 
 const invOne = new Invoice('yousuf', 'work on yousuf website', 450);
 const invTwo = new Invoice('rafae', 'work on rafae website', 600);
