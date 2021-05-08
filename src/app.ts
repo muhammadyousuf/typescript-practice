@@ -77,6 +77,37 @@ const tofrom = document.querySelector('#tofrom') as HTMLInputElement;
 const details = document.querySelector('#details') as HTMLInputElement;
 const amount = document.querySelector('#amount') as HTMLInputElement;
 
+
+
+const addUID = <T extends { username: string, age: number }>(obj: T) => {
+    let uid = Math.floor(Math.random() * 100);
+    return { ...obj, uid }
+}
+
+let docOne = addUID({ username: "yousuf", age: 24 });
+
+console.log(docOne.username)
+
+interface Resource<T> {
+    uid: number;
+    resourceName: string;
+    data: T
+}
+
+
+const docThree: Resource<object> = {
+    uid: 1,
+    resourceName: 'person',
+    data: { name: 'yousuf' }
+}
+
+const docFour: Resource<string[]> = {
+    uid: 2,
+    resourceName: 'shopping list',
+    data: ['bread', 'mlik', 'toilet roll']
+}
+
+console.log(docThree, docFour)
 // list template instance
 
 const ul = document.querySelector('ul')!;
