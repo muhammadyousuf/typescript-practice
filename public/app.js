@@ -43,14 +43,23 @@ const addUID = (obj) => {
 };
 let docOne = addUID({ username: "yousuf", age: 24 });
 console.log(docOne.username);
+var ResourceType;
+(function (ResourceType) {
+    ResourceType[ResourceType["BOOK"] = 0] = "BOOK";
+    ResourceType[ResourceType["DIRECTOR"] = 1] = "DIRECTOR";
+    ResourceType[ResourceType["FLIM"] = 2] = "FLIM";
+    ResourceType[ResourceType["PERSON"] = 3] = "PERSON";
+    ResourceType[ResourceType["AUTHOR"] = 4] = "AUTHOR";
+    ResourceType[ResourceType["CART"] = 5] = "CART";
+})(ResourceType || (ResourceType = {}));
 const docThree = {
     uid: 1,
-    resourceName: 'person',
+    resourceName: ResourceType.PERSON,
     data: { name: 'yousuf' }
 };
 const docFour = {
     uid: 2,
-    resourceName: 'shopping list',
+    resourceName: ResourceType.CART,
     data: ['bread', 'mlik', 'toilet roll']
 };
 console.log(docThree, docFour);
