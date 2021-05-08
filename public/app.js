@@ -68,12 +68,24 @@ const ul = document.querySelector('ul');
 const list = new ListTemplate(ul);
 form.addEventListener('submit', (e) => {
     e.preventDefault();
+    let values;
+    values = [tofrom.value, details.value, amount.valueAsNumber];
     let doc;
     if (type.value === 'invoice') {
-        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+        doc = new Invoice(...values);
     }
     else {
-        doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
+        doc = new Payment(...values);
     }
     list.render(doc, type.value, 'start');
 });
+// tuples
+let arr = ['yousuf', 24, true];
+arr[0] = 24;
+arr[1] = true;
+arr = [true, 'yousuf', 24];
+let tup = ['yosuf', 24, false];
+tup[0] = 'rafae';
+tup[1] = 25;
+let student;
+student = ['rafae', 222];
